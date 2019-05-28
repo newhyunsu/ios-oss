@@ -129,6 +129,10 @@ public enum Format {
     return formatter.attributedString(for: amount)
   }
 
+  public static func attributedPlusSign(_ attributes: String.Attributes = [:]) -> NSAttributedString {
+    return NSAttributedString(string: "+", attributes: attributes)
+  }
+
   /**
   Create a date from a string with the given format
 
